@@ -1,0 +1,2 @@
+if
+  (is (application_name) "FBReader") (set_workspace 4))
