@@ -1,6 +1,6 @@
 set nocompatible
 
-execute pathogen#infect()
+execute pathogen#infect('bundle/{}')
 autocmd StdinReadPre * let s:std_in=1
 
 filetype plugin indent on
