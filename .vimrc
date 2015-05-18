@@ -5,7 +5,6 @@ autocmd StdinReadPre * let s:std_in=1
 
 filetype plugin indent on
 syntax on
-
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
