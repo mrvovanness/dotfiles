@@ -47,3 +47,7 @@ set tags=./tags;
 
 "Copying to clipboard (Ctrl + c):
 map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
+" Highlight group
+:highlight ExtraWhitespace ctermbg=red
+" Show trailing whitespace
+:match ExtraWhitespace /\s\+$/
