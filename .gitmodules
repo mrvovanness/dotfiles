@@ -28,3 +28,6 @@
 [submodule "vim-renamer"]
 	path = vim-renamer
 	url = https://github.com/qpkorr/vim-renamer
+[submodule ".vim/bundle/vim-renamer"]
+	path = .vim/bundle/vim-renamer
+	url = https://github.com/qpkorr/vim-renamer
