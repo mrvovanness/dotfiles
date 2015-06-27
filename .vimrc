@@ -14,6 +14,19 @@ autocmd BufReadPost *
 :imap kj <ESC>
 map <C-n> :NERDTreeToggle<CR>
 
+"movement between tabs
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+set wmh=0 "minimaze inactive window
+
+"quick setting of window size in vertical split
+map - <C-W>-
+map + <C-W>+
+map < <C-W><
+map > <C-W>>
+
 " indentation
 set tabstop=2
 set shiftwidth=2
