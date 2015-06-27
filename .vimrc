@@ -32,8 +32,14 @@ set tabstop=2
 set shiftwidth=2
 set expandtab "use spaces, not tabs
 
+" Mouse
+set mouse=a
+
+" Copy/paste selection from/in clipboard
+map <C-c> "+y
+map <C-x> "+p
+
 "Search
-set hlsearch    " highlight matches
 set incsearch  " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
@@ -58,9 +64,6 @@ set smartcase  " ... unless they contain at least one capital letter
 :cnoremap <Esc><C-F>	<S-Right>
 set tags=./tags;
 
-"Copying to clipboard (Ctrl + c):
-map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
-" Highlight group
+" Highlight whitespaces
 :highlight ExtraWhitespace ctermbg=red
-" Show trailing whitespace
 :match ExtraWhitespace /\s\+$/
