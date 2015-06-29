@@ -12,7 +12,7 @@ autocmd BufReadPost *
 
 " custom escape and file system toggling
 :imap kj <ESC>
-map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeToggle<CR>
 
 "movement between tabs
 map <C-J> <C-W>j<C-W>_
@@ -24,8 +24,8 @@ set wmh=0 "minimaze inactive window
 "quick setting of window size in vertical split
 map - <C-W>-
 map + <C-W>+
-map < <C-W><
-map > <C-W>>
+map ( <C-W><
+map ) <C-W>>
 
 " indentation
 set tabstop=2
@@ -33,13 +33,18 @@ set shiftwidth=2
 set expandtab "use spaces, not tabs
 
 " Mouse
-set mouse=a
+set mouse+=a
+" Fix tmux
+if &term=~ '^screen'
+  " tmus know the extended mouse mode
+  set ttymouse=xterm2
+endif
 
 " Copy/paste selection from/in clipboard
 map <C-c> "+y
-map <C-x> "+p
+map <C-b> "+p
 
-"Search
+" Search
 set incsearch  " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
@@ -67,3 +72,9 @@ set tags=./tags;
 " Highlight whitespaces
 :highlight ExtraWhitespace ctermbg=red
 :match ExtraWhitespace /\s\+$/
+
+" Change vertical and horizontal borders
+:set fillchars+=vert:\ 
+:highlight VertSplit ctermfg=grey
+:highlight StatusLine ctermfg=none
+
