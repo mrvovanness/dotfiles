@@ -74,9 +74,4 @@ set tags=./tags;
 " Change vertical and horizontal borders
 :set fillchars+=vert:\ 
 :highlight VertSplit ctermfg=grey
-:highlight StatusLine ctermfg=white
-
-if !has('gui_running')
-  set t_Co=256
-endif
-set laststatus=2
+:highlight StatusLine ctermfg=30
