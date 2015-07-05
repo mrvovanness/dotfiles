@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".devilspie .irbrc .vimrc .vim .gitconfig"  # files in dotfiles directory
+files=".devilspie .irbrc .vimrc .vim .gitconfig .tmux.conf"  # files in dotfiles directory
 
 ##########
 

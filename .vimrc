@@ -98,3 +98,16 @@ set fillchars=vert:\
 highlight VertSplit ctermfg=grey
 highlight StatusLine ctermfg=30
 set t_Co=256
+
+" syntastic config
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {"mode": "passive"}
+map <leader>c :SyntasticCheck<CR>
+map <leader>r :SyntasticReset<CR>
