@@ -58,3 +58,15 @@
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/vim-dochub"]
+	path = .vim/bundle/vim-dochub
+	url = https://github.com/stephenmckinney/vim-dochub
+[submodule ".vim/bundle/delimitMate"]
+	path = .vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule ".vim/bundle/zeavim.vim"]
+	path = .vim/bundle/zeavim.vim
+	url = https://github.com/KabbAmine/zeavim.vim

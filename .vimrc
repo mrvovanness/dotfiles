@@ -1,7 +1,7 @@
 set nocompatible
 
 execute pathogen#infect('bundle/{}')
-autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let sstd_in=1
 
 filetype plugin indent on
 syntax on
@@ -11,26 +11,39 @@ autocmd BufReadPost *
     \ endif
 
 " custom escape and file system toggling
-:imap kj <ESC>
-map <C-f> :NERDTreeToggle<CR>
+imap kj <ESC>
+nmap <C-F> :NERDTreeToggle<CR>
 
-"movement between windows
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
+" ruby ommi completion
+imap <C-S> <C-X><C-O>
+
+" rails integration
+let g:rubycomplete_rails = 1
+let g:rubycomplete_load_gemfile = 1
+
+" ruby compiler
+autocmd FileType ruby compiler ruby
+
+" movement between windows
+nmap <C-J> <C-W>j<C-W>_
+nmap <C-K> <C-W>k<C-W>_
+nmap <C-L> <C-W>l<C-W>_
+nmap <C-H> <C-W>h<C-W>_
 set wmh=0 "minimaze inactive window
 
+" movements in insert mode
+imap <C-J> <C-O>j
+
 " Change vertical/horizontal split and vise versa
-map <C-N> <C-W>t<C-W>K
-map <C-P> <C-W>t<C-W>H
+nmap <C-N> <C-W>t<C-W>K
+nmap <C-P> <C-W>t<C-W>H
 
 "quick setting of window size
-map - <C-W>-
-map + <C-W>+
-map ( <C-W><
-map ) <C-W>>
-map = <C-W>=
+nmap - <C-W>-
+nmap + <C-W>+
+nmap ( <C-W><
+nmap ) <C-W>>
+nmap = <C-W>=
 
 " indentation
 set tabstop=2
@@ -54,24 +67,34 @@ set incsearch  " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
 
-" For Emacs-style editing on the command-line:
-:cnoremap <C-A>	<Home> " start of line
-:cnoremap <C-B>	<Left> " back one character
-:cnoremap <C-D>	<Del> " delete character under cursor
-:cnoremap <C-E>	<End> " end of line
-:cnoremap <C-F>	<Right> " forward one character
-:cnoremap <C-N>	<Down> " recall newer command-line
-:cnoremap <C-P>	<Up> " recall previous (older) command-line
-:cnoremap <Esc><C-B> <S-Left> " back one word
-:cnoremap <Esc><C-F> <S-Right> " forward one word
+" For Emacs-style editing on the command-line
+"start of line
+cnoremap <C-A>	<Home>
+"back one character
+cnoremap <C-B>	<Left>
+"delete character under cursor
+cnoremap <C-D>	<Del>
+"end of line
+cnoremap <C-E>	<End>
+"forward one character
+cnoremap <C-F>	<Right>
+"recall newer command-line
+cnoremap <C-N>	<Down>
+"recall previous (older) command-line
+cnoremap <C-P>	<Up>
+"back one word
+cnoremap <Esc><C-B> <S-Left>
+"forward one word
+cnoremap <Esc><C-F> <S-Right>
 
 set tags=./tags;
 
 " Highlight whitespaces
-:highlight ExtraWhitespace ctermbg=red
-:match ExtraWhitespace /\s\+$/
+highlight ExtraWhitespace ctermbg=red
+match ExtraWhitespace /\s\+$/
 
 " Change vertical and horizontal borders
-:set fillchars+=vert:\ 
-:highlight VertSplit ctermfg=grey
-:highlight StatusLine ctermfg=30
+set fillchars=vert:\ 
+highlight VertSplit ctermfg=grey
+highlight StatusLine ctermfg=30
+set t_Co=256
