@@ -9,6 +9,26 @@ autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
+set autoindent
+
+" don't use saving global option in session
+set sessionoptions-=options
+
+" no swapfile
+set nobackup
+set noswapfile
+
+" hides buffers instead of closing them
+set hidden
+
+" set leaderkey and fast edit of vimrc
+let mapleader =","
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" keep silence
+set visualbell
+set noerrorbells
 
 " custom escape and file system toggling
 imap kj <ESC>
@@ -33,6 +53,7 @@ set wmh=0 "minimaze inactive window
 
 " movements in insert mode
 imap <C-J> <C-O>j
+imap <C-K> <C-O>k
 
 " Change vertical/horizontal split and vise versa
 nmap <C-N> <C-W>t<C-W>K
@@ -90,7 +111,7 @@ cnoremap <Esc><C-F> <S-Right>
 set tags=./tags;
 
 " Highlight whitespaces
-highlight ExtraWhitespace ctermbg=red
+highlight ExtraWhitespace ctermbg=30
 match ExtraWhitespace /\s\+$/
 
 " Change vertical and horizontal borders
@@ -111,3 +132,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "passive"}
 map <leader>c :SyntasticCheck<CR>
 map <leader>r :SyntasticReset<CR>
+
+" indenation lines
+let g:indentLine_color_term = 239
