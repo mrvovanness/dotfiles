@@ -9,7 +9,7 @@ autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-set autoindent
+"disable some plugins
 
 " don't use saving global option in session
 set sessionoptions-=options
@@ -39,7 +39,7 @@ imap <C-S> <C-X><C-O>
 
 " rails integration
 let g:rubycomplete_rails = 1
-let g:rubycomplete_load_gemfile = 1
+"let g:rubycomplete_load_gemfile = 1 this config force vim to segfault
 
 " ruby compiler
 autocmd FileType ruby compiler ruby
@@ -108,7 +108,7 @@ cnoremap <Esc><C-B> <S-Left>
 "forward one word
 cnoremap <Esc><C-F> <S-Right>
 
-set tags=./tags;
+" set tags=./tags;
 
 " Highlight whitespaces
 highlight ExtraWhitespace ctermbg=30
