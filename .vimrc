@@ -1,5 +1,6 @@
 set nocompatible
 
+let g:pathogen_disabled = ['YouCompleteMe']
 execute pathogen#infect('bundle/{}')
 autocmd StdinReadPre * let sstd_in=1
 
@@ -9,7 +10,6 @@ autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-"disable some plugins
 
 " don't use saving global option in session
 set sessionoptions-=options

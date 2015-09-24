@@ -49,10 +49,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(rails git)
 
 # User configuration
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scrchipting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 source $HOME/.rvm/scripts/rvm
 # export MANPATH="/usr/local/man:$MANPATH"
 
