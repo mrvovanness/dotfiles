@@ -1,17 +1,32 @@
 set nocompatible
 
-let g:pathogen_disabled = ['YouCompleteMe']
+" Pathogen
+let g:pathogen_disabled = [] " disable here some plugins if needed
 execute pathogen#infect('bundle/{}')
-autocmd StdinReadPre * let sstd_in=1
+
+" Nerdtree
+autocmd StdinReadPre * let sstd_in=1 " open Nerdtree if no files were specified
 
 filetype plugin indent on
 syntax on
+
+" indentation
+set tabstop=2
+set shiftwidth=2
+set expandtab "use spaces, not tabs
+
+" Remember the line when reopen a file
+" This is an auto command that looks for
+" line numbers of the evaluated expressions.
+" The g command jumps to the last position if
+" it was recorded. Using :help commands for BufReadPost,
+" line() and g` will explain the details of how this works
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
 
-" don't use saving global option in session
+" don't use saving global option in session (:mksession)
 set sessionoptions-=options
 
 " no swapfile
@@ -37,10 +52,6 @@ nmap <C-F> :NERDTreeToggle<CR>
 " ruby ommi completion
 imap <C-S> <C-X><C-O>
 
-" rails integration
-let g:rubycomplete_rails = 1
-"let g:rubycomplete_load_gemfile = 1 this config force vim to segfault
-
 " ruby compiler
 autocmd FileType ruby compiler ruby
 
@@ -59,23 +70,12 @@ imap <C-K> <C-O>k
 nmap <C-N> <C-W>t<C-W>K
 nmap <C-P> <C-W>t<C-W>H
 
-"quick setting of window size
-nmap - <C-W>-
-nmap + <C-W>+
-nmap ( <C-W><
-nmap ) <C-W>>
-nmap = <C-W>=
-
-" indentation
-set tabstop=2
-set shiftwidth=2
-set expandtab "use spaces, not tabs
-
 " Mouse
 set mouse+=a
+
 " Fix tmux mouse behaviour
 if &term=~ '^screen'
-  " tmus know the extended mouse mode
+  " tmux know the extended mouse mode
   set ttymouse=xterm2
 endif
 
@@ -91,10 +91,6 @@ set smartcase  " ... unless they contain at least one capital letter
 " For Emacs-style editing on the command-line
 "start of line
 cnoremap <C-A>	<Home>
-"back one character
-cnoremap <C-B>	<Left>
-"delete character under cursor
-cnoremap <C-D>	<Del>
 "end of line
 cnoremap <C-E>	<End>
 "forward one character
@@ -108,7 +104,6 @@ cnoremap <Esc><C-B> <S-Left>
 "forward one word
 cnoremap <Esc><C-F> <S-Right>
 
-" set tags=./tags;
 
 " Highlight whitespaces
 highlight ExtraWhitespace ctermbg=30
@@ -116,22 +111,9 @@ match ExtraWhitespace /\s\+$/
 
 " Change vertical and horizontal borders
 set fillchars=vert:\ 
-highlight VertSplit ctermfg=grey
-highlight StatusLine ctermfg=30
+highlight VertSplit ctermfg=8
+highlight StatusLine ctermfg=8
 set t_Co=256
-
-" syntastic config
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = {"mode": "passive"}
-map <leader>c :SyntasticCheck<CR>
-map <leader>r :SyntasticReset<CR>
 
 " indenation lines
 let g:indentLine_color_term = 239

@@ -52,8 +52,6 @@ ZSH_THEME="robbyrussell"
 plugins=(rails git)
 
 # User configuration
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source $HOME/.rvm/scripts/rvm
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -74,5 +72,4 @@ export EDITOR='vim'
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias zshconfig="vim ~/.zshrc"
-alias gemsets="rvm gemset list"
 alias reload="source ~/.zshrc"
