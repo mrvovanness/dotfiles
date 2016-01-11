@@ -32,4 +32,5 @@ done
 
 # special case for tilda
 echo "Creating config for tilda"
+mkdir ~/.config/tilda
 ln -sf $dir/.tilda ~/.config/tilda/config_0
