@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".irbrc .vimrc .vim .gitconfig .tmux.conf .zshrc .xmodmap" # files in dotfiles directory
+files=".irbrc .vimrc .vim .gitconfig .tmux.conf .zshrc .xmodmap .i3" # files in dotfiles directory
 
 ##########
 
