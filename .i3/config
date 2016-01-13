@@ -9,6 +9,15 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# Startup
+exec cinnamon-settings-daemon
+exec cinnamon-sound-applet
+exec ~/.dropbox-dist/dropboxd
+exec --no-startup-id sleep 5 && xmodmap ~/.xmodmap
+exec sleep 5 && icedove
+exec google-chrome
+exec tilda
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
