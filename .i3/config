@@ -104,15 +104,14 @@ assign [class="^google-chrome$"] 1
 assign [class="^Tilda$"] 1
 
 assign [class="^Icedove$"] 2
-assign [class="^Firefox$"] 2
-
-assign [class="^Opera$"] 3
 
 assign [class="^FBReader$"] 4
 assign [class="^Evince$"] 4
 
 # enable specific features for some windows
 for_window [class="Keepassx"] floating enable
+for_window [class="Upwork"] floating enable
+for_window [class="Upwork"] new_window normal
 
 # focus the child container
 #bindsym $mod+d focus child
