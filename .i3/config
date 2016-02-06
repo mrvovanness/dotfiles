@@ -105,6 +105,9 @@ assign [class="^Tilda$"] 1
 
 assign [class="^Icedove$"] 2
 
+assign [class="^Transmission-gtk"] 3
+assign [class="^Clementine"] 3
+
 assign [class="^FBReader$"] 4
 assign [class="^Evince$"] 4
 

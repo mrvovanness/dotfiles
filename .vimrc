@@ -56,15 +56,16 @@ imap <C-S> <C-X><C-O>
 autocmd FileType ruby compiler ruby
 
 " movement between windows
-nmap <C-J> <C-W>j<C-W>_
-nmap <C-K> <C-W>k<C-W>_
-nmap <C-L> <C-W>l<C-W>_
-nmap <C-H> <C-W>h<C-W>_
-set wmh=0 "minimaze inactive window
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+nmap <C-H> <C-W>h
 
 " movements in insert mode
 imap <C-J> <C-O>j
 imap <C-K> <C-O>k
+imap <C-L> <C-O>l
+imap <C-B> <C-O>h
 
 " Change vertical/horizontal split and vise versa
 nmap <C-N> <C-W>t<C-W>K
@@ -80,8 +81,7 @@ if &term=~ '^screen'
 endif
 
 " Copy/paste selection from/in clipboard
-map <C-c> "+y
-map <C-b> "+p
+set clipboard=unnamedplus
 
 " Search
 set incsearch  " incremental searching
@@ -117,3 +117,7 @@ set t_Co=256
 
 " indenation lines
 let g:indentLine_color_term = 239
+
+" Status line always
+set laststatus=2
+let g:airline_powerline_fonts=1
