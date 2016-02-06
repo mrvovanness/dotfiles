@@ -1,7 +1,7 @@
 set nocompatible
 
 " Pathogen
-let g:pathogen_disabled = [] " disable here some plugins if needed
+" let g:pathogen_disabled = []
 execute pathogen#infect('bundle/{}')
 
 " Nerdtree
@@ -67,9 +67,9 @@ imap <C-K> <C-O>k
 imap <C-L> <C-O>l
 imap <C-B> <C-O>h
 
-" Change vertical/horizontal split and vise versa
-nmap <C-N> <C-W>t<C-W>K
-nmap <C-P> <C-W>t<C-W>H
+" Split opening
+set splitbelow
+set splitright
 
 " Mouse
 set mouse+=a
@@ -110,14 +110,15 @@ highlight ExtraWhitespace ctermbg=30
 match ExtraWhitespace /\s\+$/
 
 " Change vertical and horizontal borders
+set t_Co=256
 set fillchars=vert:\ 
 highlight VertSplit ctermfg=8
 highlight StatusLine ctermfg=8
-set t_Co=256
 
 " indenation lines
 let g:indentLine_color_term = 239
 
-" Status line always
+" Status line
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme='simple'

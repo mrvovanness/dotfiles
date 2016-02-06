@@ -75,3 +75,4 @@ alias zshconfig="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+source ~/.bin/tmuxinator.zsh
