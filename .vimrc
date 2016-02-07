@@ -122,3 +122,6 @@ let g:indentLine_color_term = 239
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='simple'
+
+" Reduce ESC delay
+set timeoutlen=1000 ttimeoutlen=0

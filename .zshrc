@@ -73,6 +73,7 @@ export EDITOR='vim'
 # For a full list of active aliases, run `alias`.
 alias zshconfig="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias swapc="xmodmap ~/.xmodmap"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 source ~/.bin/tmuxinator.zsh
