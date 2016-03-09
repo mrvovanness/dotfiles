@@ -125,3 +125,19 @@ let g:airline_theme='simple'
 
 " Reduce ESC delay
 set timeoutlen=1000 ttimeoutlen=0
+
+" vertical line
+highlight ColorColumn ctermbg=15
+
+" Tab panel color
+hi TabLineFill ctermfg=16 ctermbg=DarkGreen
+
+" Ignore these directories(for ctrlP)
+set wildignore+=*/tmp/*
+set wildignore+=*/log/*
+
+" mapping for refreshing crtlP cache
+let g:ctrlp_prompt_mappings = {
+      \ 'PrtClearCache()': ['<c-i>'],
+      \ }
+

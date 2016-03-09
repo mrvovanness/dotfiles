@@ -74,6 +74,7 @@ export EDITOR='vim'
 alias zshconfig="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias swapc="xmodmap ~/.xmodmap"
+#alias vim_conflicts="vim $(git status -s | grep UU | awk '{print $2}')"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 source ~/.bin/tmuxinator.zsh
