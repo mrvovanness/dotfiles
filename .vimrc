@@ -1,7 +1,7 @@
 set nocompatible
 
 " Pathogen
-" let g:pathogen_disabled = []
+ let g:pathogen_disabled = ['vim-easytags', 'vim-misc', 'vim-obsession']
 execute pathogen#infect('bundle/{}')
 
 " Nerdtree
@@ -135,6 +135,8 @@ hi TabLineFill ctermfg=16 ctermbg=DarkGreen
 " Ignore these directories(for ctrlP)
 set wildignore+=*/tmp/*
 set wildignore+=*/log/*
+set wildignore+=*/node_modules/*
+set wildignore+=*/bower_components/*
 
 " mapping for refreshing crtlP cache
 let g:ctrlp_prompt_mappings = {

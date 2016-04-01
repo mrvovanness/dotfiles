@@ -1,3 +1,3 @@
 require 'rubygems'
 require 'interactive_editor'
-IRB.conf[:ECHO] = false
+#IRB.conf[:ECHO] = false

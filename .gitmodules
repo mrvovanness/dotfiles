@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vim-renamer"]
-	path = vim-renamer
-	url = https://github.com/qpkorr/vim-renamer
 [submodule ".vim/bundle/vim-renamer"]
 	path = .vim/bundle/vim-renamer
 	url = https://github.com/qpkorr/vim-renamer
@@ -91,3 +88,6 @@
 [submodule ".vim/bundle/vim-tmux-navigator"]
 	path = .vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
