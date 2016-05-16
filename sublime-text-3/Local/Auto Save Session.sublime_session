@@ -1,0 +1,689 @@
+{
+	"folder_history":
+	[
+		"/home/dev/projects/motify-backEnd",
+		"/home/dev/studies/portfolio",
+		"/home/dev/blog/Ghost",
+		"/home/dev/projects/motify-frontEnd",
+		"/home/dev/Downloads/minovate-template/admin/angular/app/minovate/app",
+		"/home/dev/projects/weekend_company_app",
+		"/home/dev/Downloads/minovate-template/admin/angular/app/minovate",
+		"/home/dev/projects/weekend365",
+		"/home/dev/samples/ruby-science/example_app",
+		"/home/dev/Downloads/minovate-template"
+	],
+	"last_version": 3114,
+	"last_window_id": 18,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 1051.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"inline",
+						"inline"
+					],
+					[
+						"file",
+						"file"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 92.0,
+				"last_filter": ":q",
+				"selected_items":
+				[
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":pug",
+						"Set Syntax: Pug"
+					],
+					[
+						":pack",
+						"Package Control: Install Package"
+					],
+					[
+						":html",
+						"Set Syntax: HTML"
+					],
+					[
+						":pa",
+						"Package Control: Discover Packages"
+					],
+					[
+						":package",
+						"Package Control: List Packages"
+					],
+					[
+						":J",
+						"Set Syntax: JSON"
+					],
+					[
+						"Packag",
+						"Preferences: Browse Packages"
+					],
+					[
+						"Package",
+						"Preferences: Browse Packages"
+					],
+					[
+						"Set syntax: js",
+						"Set Syntax: JavaScript"
+					]
+				],
+				"width": 449.0
+			},
+			"console":
+			{
+				"height": 578.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+					"sublime.version()",
+					"sublime.version",
+					"sublime.methods",
+					"sublime",
+					"def hello:",
+					"x = 1",
+					"String",
+					"exit"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/dev/studies/portfolio/index.js",
+				"/home/dev/studies/portfolio/package.json",
+				"/home/dev/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/dev/studies/portfolio/styles/hello.html",
+				"/home/dev/studies/portfolio/index.pug",
+				"/home/dev/studies/portfolio/index.html",
+				"/home/dev/studies/portfolio/example.pug",
+				"/home/dev/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/dev/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/questions_controller.rb",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/projects_controller.rb",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/reports_controller.rb",
+				"/home/dev/projects/weekend365/app/models/company.rb",
+				"/home/dev/projects/weekend365/app/models/user.rb",
+				"/home/dev/projects/weekend365/app/models/office_location.rb",
+				"/home/dev/projects/weekend365/app/models/department.rb",
+				"/home/dev/projects/weekend365/app/models/company_challenge.rb",
+				"/home/dev/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/dev/projects/weekend365/app/models/country.rb",
+				"/home/dev/projects/weekend365/app/models/article.rb",
+				"/home/dev/projects/weekend365/app/models/company_field.rb",
+				"/home/dev/Downloads/minovate-template/admin/angular/app/minovate/app/scripts/controllers/tables-ng-table.js"
+			],
+			"find":
+			{
+				"height": 25.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"    .",
+					"chosen",
+					"dropdown addons",
+					"editable",
+					"font",
+					"submittables",
+					"submittable",
+					"open",
+					"datepicker",
+					"editabl"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 100.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"pug",
+						"example.pug"
+					],
+					[
+						"index.h",
+						"index.html"
+					],
+					[
+						"sends",
+						"app/views/surveys_mailer/sends.html.slim"
+					],
+					[
+						"grun",
+						"Gruntfile.js"
+					],
+					[
+						"app.j",
+						"app/scripts/app.js"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"company.",
+						"app/models/company.rb"
+					],
+					[
+						"office",
+						"app/models/office_location.rb"
+					],
+					[
+						"depa",
+						"app/models/department.rb"
+					],
+					[
+						"company_c",
+						"app/models/company_challenge.rb"
+					],
+					[
+						"company_f",
+						"app/models/company_field.rb"
+					],
+					[
+						"artic",
+						"app/models/article.rb"
+					],
+					[
+						"count",
+						"app/models/country.rb"
+					],
+					[
+						"models/com",
+						"app/models/company.rb"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 160.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 952.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"inline",
+						"inline"
+					],
+					[
+						"file",
+						"file"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/dev/projects/motify-backEnd/app/controllers/api/v1/participants_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2203,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"last_filter": ":w",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":gist",
+						"Gist: Create Public Gist"
+					],
+					[
+						"Pack",
+						"Package Control: Install Package"
+					],
+					[
+						":q",
+						"Set Syntax: SQL"
+					],
+					[
+						":pug",
+						"Set Syntax: Pug"
+					],
+					[
+						":pack",
+						"Package Control: Install Package"
+					],
+					[
+						":html",
+						"Set Syntax: HTML"
+					],
+					[
+						":pa",
+						"Package Control: Discover Packages"
+					],
+					[
+						":package",
+						"Package Control: List Packages"
+					],
+					[
+						":J",
+						"Set Syntax: JSON"
+					],
+					[
+						"Packag",
+						"Preferences: Browse Packages"
+					],
+					[
+						"Package",
+						"Preferences: Browse Packages"
+					],
+					[
+						"Set syntax: js",
+						"Set Syntax: JavaScript"
+					]
+				],
+				"width": 530.0
+			},
+			"console":
+			{
+				"height": 578.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+					"sublime.version()",
+					"sublime.version",
+					"sublime.methods",
+					"sublime",
+					"def hello:",
+					"x = 1",
+					"String",
+					"exit"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/dev/projects/motify-backEnd"
+			],
+			"file_history":
+			[
+				"/home/dev/Dropbox/Books/ì®á   à¨®. §£®¢®à ¢ ®¡®à¥ - royallib.ru.fb2",
+				"/home/dev/studies/portfolio/index.js",
+				"/home/dev/studies/portfolio/package.json",
+				"/home/dev/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/dev/studies/portfolio/styles/hello.html",
+				"/home/dev/studies/portfolio/index.pug",
+				"/home/dev/studies/portfolio/index.html",
+				"/home/dev/studies/portfolio/example.pug",
+				"/home/dev/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/dev/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/questions_controller.rb",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/projects_controller.rb",
+				"/home/dev/projects/weekend365/app/controllers/api/v1/reports_controller.rb",
+				"/home/dev/projects/weekend365/app/models/company.rb",
+				"/home/dev/projects/weekend365/app/models/user.rb",
+				"/home/dev/projects/weekend365/app/models/office_location.rb",
+				"/home/dev/projects/weekend365/app/models/department.rb",
+				"/home/dev/projects/weekend365/app/models/company_challenge.rb",
+				"/home/dev/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/dev/projects/weekend365/app/models/country.rb",
+				"/home/dev/projects/weekend365/app/models/article.rb",
+				"/home/dev/projects/weekend365/app/models/company_field.rb",
+				"/home/dev/Downloads/minovate-template/admin/angular/app/minovate/app/scripts/controllers/tables-ng-table.js"
+			],
+			"find":
+			{
+				"height": 25.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"    .",
+					"chosen",
+					"dropdown addons",
+					"editable",
+					"font",
+					"submittables",
+					"submittable",
+					"open",
+					"datepicker",
+					"editabl"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/dev/projects/motify-backEnd"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/dev/projects/motify-backEnd/app/controllers/api/v1/participants_controller.rb",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2203,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										113,
+										113
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 100.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,960,0,1918,1078,1920,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"pug",
+						"example.pug"
+					],
+					[
+						"index.h",
+						"index.html"
+					],
+					[
+						"sends",
+						"app/views/surveys_mailer/sends.html.slim"
+					],
+					[
+						"grun",
+						"Gruntfile.js"
+					],
+					[
+						"app.j",
+						"app/scripts/app.js"
+					],
+					[
+						"user",
+						"app/models/user.rb"
+					],
+					[
+						"company.",
+						"app/models/company.rb"
+					],
+					[
+						"office",
+						"app/models/office_location.rb"
+					],
+					[
+						"depa",
+						"app/models/department.rb"
+					],
+					[
+						"company_c",
+						"app/models/company_challenge.rb"
+					],
+					[
+						"company_f",
+						"app/models/company_field.rb"
+					],
+					[
+						"artic",
+						"app/models/article.rb"
+					],
+					[
+						"count",
+						"app/models/country.rb"
+					],
+					[
+						"models/com",
+						"app/models/company.rb"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 202.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 18,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

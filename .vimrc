@@ -1,12 +1,5 @@
 set nocompatible
-
-" Pathogen
- let g:pathogen_disabled = ['vim-easytags', 'vim-misc', 'vim-obsession']
-execute pathogen#infect('bundle/{}')
-
-" Nerdtree
-autocmd StdinReadPre * let sstd_in=1 " open Nerdtree if no files were specified
-
+let mapleader =","
 filetype plugin indent on
 syntax on
 
@@ -14,6 +7,16 @@ syntax on
 set tabstop=2
 set shiftwidth=2
 set expandtab "use spaces, not tabs
+
+" Pathogen
+let g:pathogen_disabled = []
+execute pathogen#infect('bundle/{}')
+
+" Nerdtree
+autocmd StdinReadPre * let sstd_in=1 " open Nerdtree if no files were specified
+nmap <C-F> :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+
 
 " Remember the line when reopen a file
 " This is an auto command that looks for
@@ -36,24 +39,12 @@ set noswapfile
 " hides buffers instead of closing them
 set hidden
 
-" set leaderkey and fast edit of vimrc
-let mapleader =","
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" edit config
+command! Econf :edit $MYVIMRC
 
 " keep silence
 set visualbell
 set noerrorbells
-
-" custom escape and file system toggling
-imap kj <ESC>
-nmap <C-F> :NERDTreeToggle<CR>
-
-" ruby ommi completion
-imap <C-S> <C-X><C-O>
-
-" ruby compiler
-autocmd FileType ruby compiler ruby
 
 " movement between windows
 nmap <C-J> <C-W>j
@@ -93,17 +84,14 @@ set smartcase  " ... unless they contain at least one capital letter
 cnoremap <C-A>	<Home>
 "end of line
 cnoremap <C-E>	<End>
-"forward one character
-cnoremap <C-F>	<Right>
-"recall newer command-line
-cnoremap <C-N>	<Down>
-"recall previous (older) command-line
-cnoremap <C-P>	<Up>
 "back one word
-cnoremap <Esc><C-B> <S-Left>
+cnoremap <C-B> <S-Left>
 "forward one word
-cnoremap <Esc><C-F> <S-Right>
-
+cnoremap <C-F> <S-Right>
+"recall newer command-line
+cnoremap <C-N> <Down>
+"recall previous (older) command-line
+cnoremap <C-P> <Up>
 
 " Highlight whitespaces
 highlight ExtraWhitespace ctermbg=30
@@ -117,11 +105,6 @@ highlight StatusLine ctermfg=8
 
 " indenation lines
 let g:indentLine_color_term = 239
-
-" Status line
-set laststatus=2
-let g:airline_powerline_fonts=1
-let g:airline_theme='simple'
 
 " Reduce ESC delay
 set timeoutlen=1000 ttimeoutlen=0
@@ -137,9 +120,14 @@ set wildignore+=*/tmp/*
 set wildignore+=*/log/*
 set wildignore+=*/node_modules/*
 set wildignore+=*/bower_components/*
+set wildignore+=*/vendor/*
 
 " mapping for refreshing crtlP cache
 let g:ctrlp_prompt_mappings = {
       \ 'PrtClearCache()': ['<c-i>'],
       \ }
+" don't highlight background in html
+let html_no_rendering = 1
 
+" associate *.es6 with *.js
+au BufRead,BufNewFile *.es6 setfiletype javascript

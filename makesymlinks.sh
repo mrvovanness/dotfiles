@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".irbrc .vimrc .vim .gitconfig .tmux .tmux.conf .zshrc .xmodmap .i3" # files in dotfiles directory
+files=".irbrc .vimrc .vim .gitconfig .tmux .tmux.conf .zshrc .xmodmap" # files in dotfiles directory
 
 ##########
 
@@ -30,7 +30,5 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-# special case for tilda
-echo "Creating config for tilda"
-mkdir ~/.config/tilda
-ln -sf $dir/.tilda ~/.config/tilda/config_0
+echo "Creating config for sublime"
+ln -sf $dir/sublime-text-3 ~/.config/sublime-text-3

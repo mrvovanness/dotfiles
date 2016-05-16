@@ -10,36 +10,15 @@
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule ".vim/bundle/tlib_vim"]
-	path = .vim/bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
-[submodule ".vim/bundle/vim-addon-mw-utils"]
-	path = .vim/bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule ".vim/bundle/vim-snipmate"]
-	path = .vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
-[submodule ".vim/bundle/vim-snippets"]
-	path = .vim/bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule ".vim/bundle/vim-renamer"]
-	path = .vim/bundle/vim-renamer
-	url = https://github.com/qpkorr/vim-renamer
 [submodule ".vim/bundle/vim-slim"]
 	path = .vim/bundle/vim-slim
 	url = git://github.com/slim-template/vim-slim.git
 [submodule ".vim/bundle/vim-ruby-fold"]
 	path = .vim/bundle/vim-ruby-fold
 	url = git://github.com/bruno-/vim-ruby-fold.git
-[submodule ".vim/bundle/bundle/vim-less"]
-	path = .vim/bundle/bundle/vim-less
-	url = https://github.com/groenewege/vim-less.git
-[submodule ".vim/bundle/bundle/vim-less.git"]
-	path = .vim/bundle/bundle/vim-less.git
-	url = https://github.com/groenewege/vim-less.git
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
@@ -55,39 +34,12 @@
 [submodule ".vim/bundle/indentLine"]
 	path = .vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine
-[submodule ".tmux/plugins/tpm"]
-	path = .tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
-[submodule ".vim/bundle/vim-obsession"]
-	path = .vim/bundle/vim-obsession
-	url = git@github.com:tpope/vim-obsession.git
-[submodule ".vim/bundle/vim-angular"]
-	path = .vim/bundle/vim-angular
-	url = https://github.com/burnettk/vim-angular
 [submodule ".vim/bundle/vim-jade"]
 	path = .vim/bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule ".vim/bundle/vim-airline-themes"]
-	path = .vim/bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule ".vim/bundle/vim-easytags"]
-	path = .vim/bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags
-[submodule ".vim/bundle/vim-misc"]
-	path = .vim/bundle/vim-misc
-	url = https://github.com/xolox/vim-misc
-[submodule ".vim/bundle/tmuxline.vim"]
-	path = .vim/bundle/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim
 [submodule ".vim/bundle/vim-tmux-navigator"]
 	path = .vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
-[submodule ".vim/bundle/typescript-vim"]
-	path = .vim/bundle/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim
