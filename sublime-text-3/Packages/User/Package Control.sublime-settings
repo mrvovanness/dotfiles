@@ -5,9 +5,12 @@
 	],
 	"installed_packages":
 	[
-		"Emmet",
+		"FileSystem Autocompletion",
 		"Gist",
+		"Handlebars",
+		"JSLint",
 		"Package Control",
-		"Pug"
+		"Pug",
+		"Surround"
 	]
 }

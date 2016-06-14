@@ -58,6 +58,10 @@ imap <C-K> <C-O>k
 imap <C-L> <C-O>l
 imap <C-B> <C-O>h
 
+" go to normal mode
+imap kj <C-[>
+vmap kj <C-[>
+
 " Split opening
 set splitbelow
 set splitright
@@ -114,6 +118,9 @@ highlight ColorColumn ctermbg=15
 
 " Tab panel color
 hi TabLineFill ctermfg=16 ctermbg=DarkGreen
+
+" Folds color
+highlight Folded ctermbg=8
 
 " Ignore these directories(for ctrlP)
 set wildignore+=*/tmp/*

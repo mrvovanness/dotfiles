@@ -1,9 +1,9 @@
 [
-	{ "keys": ["ctrl+["], "command": "exit_insert_mode",
+	{ "keys": ["k", "j"], "command": "exit_insert_mode",
       "context": [
         {"key": "setting.command_mode", "operand": false },
         {"key": "setting.is_widget", "operand": false },
       ]
-
-	}
+	},
+  { "keys": ["ctrl+'"], "command": "file_system_comp_trigger" }
 ]

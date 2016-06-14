@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/belenos/.vim/bundle/rubycomplete.vim/plugin'
 let g:netrw_dirhist_2='/home/belenos/Dropbox/flashcard'
 let g:netrw_dirhist_3='/home/belenos/Dropbox/flashcard/.git'
 let g:netrw_dirhist_4='/home/belenos/Dropbox/flashcard'
 let g:netrw_dirhist_5='/home/belenos/Dropbox/flashcard/app'
 let g:netrw_dirhist_6='/home/belenos/Dropbox/flashcard/app/assets'
+let g:netrw_dirhist_7='/home/dev/studies/nodejs'
