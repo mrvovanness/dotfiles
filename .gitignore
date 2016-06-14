@@ -3,3 +3,7 @@
 .tmux/resurrect
 Gist.sublime-settings
 Session.sublime_session
+*/Index/*
+*.cache
+*.last-run
+Local
