@@ -1,3 +1,5 @@
 .vim/view/
 *.swp
 .tmux/resurrect
+Gist.sublime-settings
+Session.sublime_session
