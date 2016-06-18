@@ -77,4 +77,5 @@ alias swapc="xmodmap ~/.xmodmap"
 #alias vim_conflicts="vim $(git status -s | grep UU | awk '{print $2}')"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-source ~/.bin/tmuxinator.zsh
+
+source ~/.fzf.zsh

@@ -8,9 +8,31 @@ set tabstop=2
 set shiftwidth=2
 set expandtab "use spaces, not tabs
 
-" Pathogen
-let g:pathogen_disabled = []
-execute pathogen#infect('bundle/{}')
+" plug
+
+call plug#begin('~/.vim/plugged')
+"common
+Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+"fuzzy search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+"ruby
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
+Plug 'bruno-/vim-ruby-fold', { 'for': 'ruby' }
+
+"js
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
+call plug#end()
 
 " Nerdtree
 autocmd StdinReadPre * let sstd_in=1 " open Nerdtree if no files were specified
@@ -83,6 +105,9 @@ set incsearch  " incremental searching
 set ignorecase " searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
 
+" fzf
+nmap <C-p> :Files<CR>
+
 " For Emacs-style editing on the command-line
 "start of line
 cnoremap <C-A>	<Home>
@@ -122,17 +147,13 @@ hi TabLineFill ctermfg=16 ctermbg=DarkGreen
 " Folds color
 highlight Folded ctermbg=8
 
-" Ignore these directories(for ctrlP)
+" Ignore these directories
 set wildignore+=*/tmp/*
 set wildignore+=*/log/*
 set wildignore+=*/node_modules/*
 set wildignore+=*/bower_components/*
 set wildignore+=*/vendor/*
 
-" mapping for refreshing crtlP cache
-let g:ctrlp_prompt_mappings = {
-      \ 'PrtClearCache()': ['<c-i>'],
-      \ }
 " don't highlight background in html
 let html_no_rendering = 1
 
