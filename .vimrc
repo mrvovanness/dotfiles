@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 "fuzzy search
@@ -106,7 +107,8 @@ set ignorecase " searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
 
 " fzf
-nmap <C-p> :Files<CR>
+nmap <C-p> :FZF<CR>
+imap <C-f> <plug>(fzf-complete-path)
 
 " For Emacs-style editing on the command-line
 "start of line
