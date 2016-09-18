@@ -79,3 +79,11 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 source ~/.fzf.zsh
+
+google() {
+  if [ -z "$1" ]; then
+    echo 'Please specify search term'
+  else
+    google-chrome "https://google.com/?q=$1"
+  fi
+}

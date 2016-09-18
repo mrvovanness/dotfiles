@@ -18,6 +18,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'godlygeek/tabular'
 
 "fuzzy search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -161,3 +162,4 @@ let html_no_rendering = 1
 
 " associate *.es6 with *.js
 au BufRead,BufNewFile *.es6 setfiletype javascript
+au BufRead,BufNewFile *.json setfiletype javascript

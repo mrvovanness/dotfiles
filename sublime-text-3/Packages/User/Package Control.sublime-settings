@@ -11,6 +11,7 @@
 		"JSLint",
 		"Package Control",
 		"Pug",
-		"Surround"
+		"Surround",
+		"TrailingSpaces"
 	]
 }

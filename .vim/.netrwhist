@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/dev'
-let g:netrw_dirhist_2='/home/dev/job/a-ads-rotator'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/dev/.cinnamon/configs'
+let g:netrw_dirhist_2='/home/dev/.cinnamon/configs/power@cinnamon.org'
+let g:netrw_dirhist_3='/home/dev/.cinnamon/configs/commandLauncher@scollins'
+let g:netrw_dirhist_4='/home/dev/.cinnamon/configs'
+let g:netrw_dirhist_5='/home/dev/.cinnamon/configs/calculator@scollins'
+let g:netrw_dirhist_6='/home/dev/.cinnamon/configs/commandLauncher@scollins'
+let g:netrw_dirhist_7='/home/dev/.cinnamon/configs'
