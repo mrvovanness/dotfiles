@@ -163,3 +163,5 @@ let html_no_rendering = 1
 " associate *.es6 with *.js
 au BufRead,BufNewFile *.es6 setfiletype javascript
 au BufRead,BufNewFile *.json setfiletype javascript
+
+set conceallevel=0

@@ -78,6 +78,9 @@ alias swapc="xmodmap ~/.xmodmap"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=/opt/chefdk/bin:$PATH
+
 source ~/.fzf.zsh
 
 google() {
@@ -87,3 +90,4 @@ google() {
     google-chrome "https://google.com/?q=$1"
   fi
 }
+export PHANTOMJS_PATH=~/.phantomjs/2.1.1/x86_64-linux/bin/phantomjs
