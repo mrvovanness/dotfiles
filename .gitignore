@@ -9,3 +9,4 @@ sublime-text-3/Cache/*
 *.cache
 *.last-run
 Local
+.vim/.netrwhist

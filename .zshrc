@@ -91,3 +91,4 @@ google() {
   fi
 }
 export PHANTOMJS_PATH=~/.phantomjs/2.1.1/x86_64-linux/bin/phantomjs
+export PATH=$PATH:/usr/local/openresty-1.11.2.2/bin
