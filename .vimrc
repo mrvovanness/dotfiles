@@ -19,6 +19,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'godlygeek/tabular'
+Plug 'vim-scripts/renamer.vim'
 
 "fuzzy search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -84,7 +85,6 @@ imap <C-B> <C-O>h
 
 " go to normal mode
 imap kj <C-[>
-vmap kj <C-[>
 
 " Split opening
 set splitbelow
@@ -161,7 +161,10 @@ set wildignore+=*/vendor/*
 let html_no_rendering = 1
 
 " associate *.es6 with *.js
-au BufRead,BufNewFile *.es6 setfiletype javascript
-au BufRead,BufNewFile *.json setfiletype javascript
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
-set conceallevel=0
+" Show quotes in json files
+autocmd BufEnter,BufReadPre *.json set conceallevel=0
+
+" Autorefresh Nerdtree
+autocmd WinEnter * if exists('b:NERDTree') | execute 'normal R' | endif

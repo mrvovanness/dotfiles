@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git)
+plugins=(rails git git-open)
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -82,6 +82,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=/opt/chefdk/bin:$PATH
 
 source ~/.fzf.zsh
+source ~/.secrets
 
 google() {
   if [ -z "$1" ]; then
@@ -92,3 +93,4 @@ google() {
 }
 export PHANTOMJS_PATH=~/.phantomjs/2.1.1/x86_64-linux/bin/phantomjs
 export PATH=$PATH:/usr/local/openresty-1.11.2.2/bin
+export GOPATH=~/go
