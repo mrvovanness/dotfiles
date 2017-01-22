@@ -13,6 +13,7 @@ set expandtab "use spaces, not tabs
 call plug#begin('~/.vim/plugged')
 "common
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'christoomey/vim-tmux-navigator'
@@ -150,12 +151,15 @@ hi TabLineFill ctermfg=16 ctermbg=DarkGreen
 " Folds color
 highlight Folded ctermbg=8
 
-" Ignore these directories
-set wildignore+=*/tmp/*
-set wildignore+=*/log/*
-set wildignore+=*/node_modules/*
-set wildignore+=*/bower_components/*
-set wildignore+=*/vendor/*
+" Default fzf search command and actions
+if executable('ag')
+  let $FZF_DEFAULT_COMMAND = 'ag -l --hidden --ignore .git -g ""'
+endif
+
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 " don't highlight background in html
 let html_no_rendering = 1
@@ -164,7 +168,7 @@ let html_no_rendering = 1
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " Show quotes in json files
-autocmd BufEnter,BufReadPre *.json set conceallevel=0
+autocmd BufEnter *.json set conceallevel=0
 
 " Autorefresh Nerdtree
 autocmd WinEnter * if exists('b:NERDTree') | execute 'normal R' | endif
