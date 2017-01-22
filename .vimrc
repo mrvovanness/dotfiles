@@ -152,6 +152,8 @@ hi TabLineFill ctermfg=16 ctermbg=DarkGreen
 highlight Folded ctermbg=8
 
 " Default fzf search command and actions
+let g:fzf_history_dir = "/tmp"
+
 if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag -l --hidden --ignore .git -g ""'
 endif
@@ -160,6 +162,7 @@ let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
+
 
 " don't highlight background in html
 let html_no_rendering = 1
